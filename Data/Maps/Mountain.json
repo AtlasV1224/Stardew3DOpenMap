@@ -1,0 +1,18 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Mountain",
+            "FromFile": "Assets/Maps/MountainExtensionDown.tmx",
+            "ToArea": {
+                "X": 0,
+                "Y": 40,
+                "Width": 135,
+                "Height": 11
+            }
+        },
+    ]
+}
+
+

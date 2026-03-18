@@ -3,6 +3,12 @@
     "Format": "2.9.0",
     "Changes": [
         {
+            "Action": "Include",
+            "FromFile": "Data/Maps/Mountain.json"
+        },
+        {
+            "Action": "Include",
+            "FromFile": "Data/Maps/Backwoods.json"
         },
     ]
 }
