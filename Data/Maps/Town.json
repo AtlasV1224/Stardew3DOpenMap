@@ -1,0 +1,58 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        // ---------
+        // Custom Location Definitions 
+        // (alphabetical name then clockwise direction)
+        // ---------
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_TownEast",
+            "FromFile": "Assets/Maps/TownEast.tmx",
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_TownWest",
+            "FromFile": "Assets/Maps/TownWest.tmx",
+        },
+
+        // ---------
+        // Vanilla Location Edits 
+        // (alphabetical name then clockwise direction)
+        // ---------
+
+        // ---------
+        // Custom Location Edits 
+        // (alphabetical name then clockwise direction)
+        // ---------
+        // FIXME: They need actually doing yanno
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "{{ModId}}_TownEast": {
+                    "DisplayName": "TownEast",
+                    "DefaultArrivalTile": "10, 18",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_TownEast"
+                    }
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "{{ModId}}_TownWest": {
+                    "DisplayName": "TownWest",
+                    "DefaultArrivalTile": "10, 18",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_TownWest"
+                    }
+                }
+            }
+        },
+    ]
+}
+
+

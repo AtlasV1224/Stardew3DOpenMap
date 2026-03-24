@@ -1,6 +1,18 @@
 {
     "$schema": "https://smapi.io/schemas/content-patcher.json",
     "Changes": [
+        // FIXME: this is the whole map... oops? Also X, Y, W, H are buggered
+        // {
+        //     "Action": "EditMap",
+        //     "Target": "Maps/Mountain",
+        //     "FromFile": "Assets/Maps/MountainExtensionRight.tmx",
+        //     "ToArea": {
+        //         "X": 0,
+        //         "Y": 40,
+        //         "Width": 135,
+        //         "Height": 11
+        //     }
+        // },
         {
             "Action": "EditMap",
             "Target": "Maps/Mountain",
