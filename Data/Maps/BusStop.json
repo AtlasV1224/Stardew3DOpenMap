@@ -1,0 +1,40 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        // ---------
+        // Custom Location Definitions 
+        // (alphabetical name then clockwise direction)
+        // ---------
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_BusStopNorth",
+            "FromFile": "Assets/Maps/BusStopNorth.tmx",
+        },
+
+        // ---------
+        // Vanilla Location Edits 
+        // (alphabetical name then clockwise direction)
+        // ---------
+
+        // ---------
+        // Custom Location Edits 
+        // (alphabetical name then clockwise direction)
+        // ---------
+        // FIXME: Finish it + Right side + warps
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "{{ModId}}_BusStopNorth": {
+                    "DisplayName": "BusStopNorth",
+                    "DefaultArrivalTile": "10, 18",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_BusStopNorth"
+                    }
+                }
+            }
+        },
+    ]
+}
+
+

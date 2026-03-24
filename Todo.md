@@ -9,6 +9,10 @@
 ## Notes
 - Maps should be a minimum of 40 x 24 to avoid black bars on max zoom
 - Iro's Tileinator plugin works well for these maps and helps avoid accidentally including vanilla assets
+- Map definition names are as follows:
+    - Extensions to vanilla maps are `<VanillaMapName>Extension<Top|Bottom|Left|Right>.tmx`
+    - Custom maps are `<ClosestVanillaMap><North|East|South|West>.tmx`
+    - Modifications to vanilla maps are `<VanillaMapName>Modification<Number>.tmx`
 
 ## Content
 - [ ] Add Per map json
